@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="eng us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+    <title>OXSPEAR</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script>
+        //Scroll button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+    </script>
+</head>
+
+<body>
+    <button onClick="topFunction()" id="scroll01" title="Go to top">&#10595;</button>
+    <div ></div>
+        <div class="row">
+            <div class="site-display-container">
+                <div id="home" style="background:url('/static/images/photo_110307_20170726(2).jpg')no-repeat;background-size:100%;" >
+                    <div class="site-left col-12 col-s-12 "style=" width:100%; margin:0px; padding:0px;text-align: center;" > 
+                        <h2 class="site-text-brown">Oxspear<br/><span class="site-text-black">Consultants</span></h2>
+                        <p class="site-text-black">Limited</p><br/>
+                    </div> 
+                    <div class="navIndex-light" style="text-align: center;" >
+                        <button class="nav-button-light site-right"  ></button>
+                        <a class="nav-light" href="#about">About</a>
+                        <a class="nav-light" href="#contactus">Contact Us</a>
+                        <a class="nav-light" href="#corevalues">Core Values</a>
+                        <a class="nav-light" href="#team">Team Oganisation</a>
+                        <a class="nav-light" href="#services">Services</a>
+                        <a class="nav-light" href="#clients">Our Clients</a>
+                    </div>     
+                </div>
+                <div class="col-12 col-s-12 site-blue-black" style="text-align:center">
+                    <h1 id="about"  style="text-align:center">About Us</h1>
+                    <hr />
+                    <p>We are a dynamic outfit conceptualized in 2010 with a pool of experienced consultants from a variety of backgrounds ranging from Human Resource, Economics, Statistics, Agriculture, Project Management, ICT, Engineering, Strategy, Trade, among others to bridge existing industrial gaps.</p>
+                    <h3>Vision</h3>
+                    <p>A world class consultancy firm offering practical and sustainable solutions. </p>
+                    <h3>Mission</h3>
+                    <p>Enhancing organizational performance by offering quality consultancy services.</p>
+                </div>
+                <div  class="col-7 col-s-12 site-pale-green">
+                    <h1 id="corevalues" style="text-align:center">Core Values</h1>
+                    <hr />
+                    <div class="site-text-black">
+                        <ul>
+                            <li><b>Customer Focus</b><br/>We aim at exceeding 100% customer satisfaction index. </li>
+                            <li><b>Professionalism</b><br/>At Oxspear we observe professionalism in all our endeavors ranging from observing ethical standards to registration with professional bodies. </li>
+                            <li><b>Creativity and Innovation</b><br/>We customized best practices to enhance efficiency in service delivery. </li>
+                            <li><b>Teamwork </b><br/>Teamwork among our consulting team and client for guaranteed sustainable solutions. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="col-5 col-s-12 site-pale-blue site-border-left">
+                    <h1 id="team" style="text-align:center">Team Organisation</h1>
+                    <hr />
+                    <div class="site-text-black">
+                        <ul>
+                            <li>Researchers.</li>
+                            <li>Balanced Score Card practitioners.</li>
+                            <li>Human Resource practitioners.</li>
+                            <li>Strategic Planning and Management Experts.</li>
+                            <li>Training facilitators.</li>
+                            <li>Monitoring & Evaluation experts.</li>
+                            <li>Risk Management Experts.</li>
+                            <li>Team Building facilitators.</li>
+                            <li>Rapporteurs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="contactus" class="col-12 col-s-12 site-teal" style="text-align:center;">
+                        <h4>YOU CAN EMAIL US DIRECTLY BY CLICKING HERE.</h4>
+                        <a class="site-button site-green" href="mailto:oxspearconsultant@gmail.com" target="_blank">Email us</a>
+                </div>
+                <div  class="col-12 col-s-12 site-sand">
+                    <h1 id="services" style="text-align:center">Services</h1>
+                    <hr />
+                    <div class="site-text-black">
+                        <ul>
+                            <li>Development and Review of Strategic Plans </li>
+                            <li>Performance management by use of Balanced Score Card</li>
+                            <li>Formulation of Communication Strategy </li>
+                            <li>Development of Business Plans</li>
+                            <li>Feasibility Studies</li>
+                            <li>Competence Needs Assessment</li>
+                            <li>Team Building </li>
+                            <li>Human Resource Surveys (employee satisfaction, work environment satisfaction, gender mainstreaming, disability mainstreaming, HIV/AIDs mainstreaming, corruption prevalence & perception)</li>
+                            <li>Training & Capacity Building in various fields </li>
+                            <li>Training Needs Assessment </li>
+                            <li>Staff Skills & Competency Audit </li>
+                            <li>Mid-Term and End-Term Evaluation </li>
+                            <li>Development of Public Policy</li>
+                            <li>Development and Review of Human Resource Policies</li>
+                            <li>Integrated Risk Management</li> 
+                            <li>Data Entry and Analysis</li>
+                            <li>Market Research </li>
+                            <li>Project Planning & Management Expert </li>
+                            <li>Information Communication and Technology </li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-s-12 ">
+                    <h2 id="clients">Some of our clients include:</h2>
+                    <img src="{{url_for('static', filename='images/kefri.jpg')}}" style="width:300px;">
+                    <img src="{{url_for('static', filename='images/kentrade.jpg')}}" style="width:300px;">
+                    <img src="{{url_for('static', filename='images/ministry_of_devolution_and_planing.jpg')}}" style="width:300px;">
+                    <img src="{{url_for('static', filename='images/office_of_registrar_of_political_parties.jpg')}}" style="width:300px;">
+                    <img src="{{url_for('static', filename='images/privatization_commission.jpg')}}" style="width:300px;">
+                </div>
+                
+            </div>
+        </div>
+    
+    <footer id="foot01" style="width:100%; text-align:center;">
+        <p><b>You can find us at: </b>Development House</p>
+        <p>P.O Box 38472-00100,Nairobi.</p>
+        <p><b>Email: </b>oxspearconsultant@gmail.com</p>
+        <p><b>Tel:</b> +254 726 944 318</p>
+        <p>&copy; <span></span> Oxspear Consultancy Limited. All rights reserved.</p>
+    </footer>
+    <script src="{{url_for('static', filename='js/jQuery-v3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jQuery_script.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>
