@@ -1,135 +1,517 @@
 <!DOCTYPE html>
-<html lang="eng us">
+<html class="no-js" lang="en">
+    <head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="#">
-    <title>OXSPEAR</title>
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <title>Oxspear</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <script>
-        //Scroll button
-        window.onscroll = function() {
-            scrollFunction()
-        };
-    </script>
-</head>
+        <!-- mobile specific metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    <button onClick="topFunction()" id="scroll01" title="Go to top">&#10595;</button>
-    <div ></div>
-        <div class="row">
-            <div class="site-display-container">
-                <div id="home" style="background:url('/static/images/headerimage.jpg')no-repeat;background-size:100%;" >
-                    <div class="site-left col-12 col-s-12 "style=" width:100%; margin:0px; padding:0px;text-align: center;" > 
-                        <h2 class="site-text-dark-gray">Oxspear<br/><span class="site-text-black">Consultants</span></h2>
-                        <p class="site-text-white">Limited</p><br/>
-                    </div> 
-                    <div class="navIndex-light" style="text-align: center;" >
-                        <button class="nav-button-light site-right"  ></button>
-                        <a class="nav-light" href="#about">About</a>
-                        <a class="nav-light" href="#contactus">Contact Us</a>
-                        <a class="nav-light" href="#corevalues">Core Values</a>
-                        <a class="nav-light" href="#team">Team Oganisation</a>
-                        <a class="nav-light" href="#services">Services</a>
-                        <a class="nav-light" href="#clients">Our Clients</a>
-                    </div>     
-                </div>
-                <div class="col-12 col-s-12 site-blue-black" style="text-align:center">
-                    <h1 id="about"  style="text-align:center">About Us</h1>
-                    <hr />
-                    <p>We are a dynamic outfit conceptualized in 2010 with a pool of experienced consultants from a variety of backgrounds ranging from Human Resource, Economics, Statistics, Agriculture, Project Management, ICT, Engineering, Strategy, Trade, among others to bridge existing industrial gaps.</p>
-                    <h3>Vision</h3>
-                    <p>A world class consultancy firm offering practical and sustainable solutions. </p>
-                    <h3>Mission</h3>
-                    <p>Enhancing organizational performance by offering quality consultancy services.</p>
-                </div>
-                <div  class="col-7 col-s-12 site-pale-green">
-                    <h1 id="corevalues" style="text-align:center">Core Values</h1>
-                    <hr />
-                    <div class="site-text-black">
-                        <ul>
-                            <li><b>Customer Focus</b><br/>We aim at exceeding 100% customer satisfaction index. </li>
-                            <li><b>Professionalism</b><br/>At Oxspear we observe professionalism in all our endeavors ranging from observing ethical standards to registration with professional bodies. </li>
-                            <li><b>Creativity and Innovation</b><br/>We customized best practices to enhance efficiency in service delivery. </li>
-                            <li><b>Teamwork </b><br/>Teamwork among our consulting team and client for guaranteed sustainable solutions. </li>
-                        </ul>
-                    </div>
-                </div>
-                <div  class="col-5 col-s-12 site-pale-blue site-border-left">
-                    <h1 id="team" style="text-align:center">Team Organisation</h1>
-                    <hr />
-                    <div class="site-text-black">
-                        <ul>
-                            <li>Researchers.</li>
-                            <li>Balanced Score Card practitioners.</li>
-                            <li>Human Resource practitioners.</li>
-                            <li>Strategic Planning and Management Experts.</li>
-                            <li>Training facilitators.</li>
-                            <li>Monitoring & Evaluation experts.</li>
-                            <li>Risk Management Experts.</li>
-                            <li>Team Building facilitators.</li>
-                            <li>Rapporteurs.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="contactus" class="col-12 col-s-12 site-teal" style="text-align:center;">
-                        <h4>YOU CAN EMAIL US DIRECTLY BY CLICKING HERE.</h4>
-                        <a class="site-button site-green" href="mailto:oxspearconsultant@gmail.com" target="_blank">Email us</a>
-                </div>
-                <div  class="col-12 col-s-12 site-sand">
-                    <h1 id="services" style="text-align:center">Services</h1>
-                    <hr />
-                    <div class="site-text-black">
-                        <ul>
-                            <li>Development and Review of Strategic Plans </li>
-                            <li>Performance management by use of Balanced Score Card</li>
-                            <li>Formulation of Communication Strategy </li>
-                            <li>Development of Business Plans</li>
-                            <li>Feasibility Studies</li>
-                            <li>Competence Needs Assessment</li>
-                            <li>Team Building </li>
-                            <li>Human Resource Surveys (employee satisfaction, work environment satisfaction, gender mainstreaming, disability mainstreaming, HIV/AIDs mainstreaming, corruption prevalence & perception)</li>
-                            <li>Training & Capacity Building in various fields </li>
-                            <li>Training Needs Assessment </li>
-                            <li>Staff Skills & Competency Audit </li>
-                            <li>Mid-Term and End-Term Evaluation </li>
-                            <li>Development of Public Policy</li>
-                            <li>Development and Review of Human Resource Policies</li>
-                            <li>Integrated Risk Management</li> 
-                            <li>Data Entry and Analysis</li>
-                            <li>Market Research </li>
-                            <li>Project Planning & Management Expert </li>
-                            <li>Information Communication and Technology </li> 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-s-12 ">
-                    <h2 id="clients">Some of our clients include:</h2>
-                    <img src="{{url_for('static', filename='images/kefri.jpg')}}" style="width:300px;">
-                    <img src="{{url_for('static', filename='images/kentrade.jpg')}}" style="width:300px;">
-                    <img src="{{url_for('static', filename='images/ministry_of_devolution_and_planing.jpg')}}" style="width:300px;">
-                    <img src="{{url_for('static', filename='images/office_of_registrar_of_political_parties.jpg')}}" style="width:300px;">
-                    <img src="{{url_for('static', filename='images/privatization_commission.jpg')}}" style="width:300px;">
-                </div>
-                
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/vendor.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+
+        <!-- script
+        ================================================== -->
+        <script src="{{url_for('static', filename='js/modernizr.js')}}"></script>
+        <script src="{{url_for('static', filename='js/pace.min.js')}}"></script>
+
+        <!-- favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="{{url_for('static', filename='images/')}}" type="image/x-icon">
+        <link rel="icon" href="{{url_for('static', filename='images/')}}" type="image/x-icon">
+
+    </head>
+    <body id="top">
+        
+        <!-- preloader
+        ================================================== -->
+        <div id="preloader">
+            <div id="loader" class="dots-jump">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
-    
-    <footer id="foot01" style="width:100%; text-align:center;">
-        <p><b>You can find us at: </b>Development House</p>
-        <p>P.O Box 38472-00100,Nairobi.</p>
-        <p><b>Email: </b>oxspearconsultant@gmail.com</p>
-        <p><b>Tel:</b> +254 726 944 318</p>
-        <p>&copy; <span></span> Oxspear Consultancy Limited. All rights reserved.</p>
-    </footer>
-    <script src="{{url_for('static', filename='js/jQuery-v3.3.1.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jQuery_script.js')}}"></script>
-    <script src="{{url_for('static', filename='js/script.js')}}"></script>
-</body>
 
+
+        <!-- header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row">
+
+                <div class="header-logo">
+                    <a class="site-logo" href="/"><img src="{{url_for('static', filename='images/logo1.jpg')}}" alt="Homepage"></a>
+                </div>
+                
+                <nav class="header-nav-wrap">
+                    <ul class="header-nav">
+                        <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                        <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                        <li><a class="smoothscroll" href="#corevalues" title="core values">Core Values</a></li>
+                        <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                        <li><a class="smoothscroll" href="#teamorganisation" title="organisation">Team Oganisation</a></li>
+                        <li><a class="smoothscroll"  href="#clients" title="works">Clients</a></li>
+                        <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+
+
+                        
+                        
+                    </ul>
+                </nav> <!-- end header-nav-wrap -->
+                
+                <a class="header-menu-toggle" href="#0">
+                    <span class="header-menu-icon"></span>
+                </a>
+
+            </div> <!-- end row -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- home
+        ================================================== -->
+        <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="{{url_for('static', filename='images/hero-bg.jpg')}}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+            <div class="shadow-overlay"></div>
+
+            <div class="home-content">
+
+                <div class="row home-content__main">
+
+                    <h1>
+                        We are a dynamic outfit<br>
+                        conceptualized in 2010 <br>
+                        with a pool of experienced consultants
+                    </h1>
+
+                    <div class="home-content__button">
+                        <a href="#about" class="smoothscroll btn btn-animatedbg">
+                            More About Us
+                        </a>
+                    </div>
+        
+                </div> <!-- end home-content__main -->
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        Scroll
+                    </a>
+                </div>
+
+            </div> <!-- end home-content -->
+<!--
+            <ul class="home-social">
+                <li>
+                    <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                </li>
+            </ul> 
+
+
+-->
+            
+
+        </section> <!-- end s-home -->
+
+
+        <!-- about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 data-num="01" class="subhead">Who We Are</h3>
+                    <h2 class="display-1">
+                        We are a dynamic outfit conceptualized in 2010 with a pool of experienced consultants from a variety of backgrounds ranging from Human Resource, Economics, Statistics, Agriculture, Project Management, ICT, Engineering, Strategy, Trade, among others to bridge existing industrial gaps.
+                    </h2>
+                    <h3 class="display-3">Vision</h3>
+                    <p class="lead">A world class consultancy firm offering practical and sustainable solutions.</p>
+                    <h3 class="display-3">Mission</h3>
+                    <p class="lead">Enhancing organizational performance by offering quality consultancy services.</p>
+                </div>
+            </div>
+            <div id="corevalues"></div>
+            <div  class="row about-process block-1-2 block-tab-full">
+                <h3  data-num="02" class="subhead">Our Core Values</h3>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__header item-process__header--planning">
+                        <h6>Customer Focus</h6>
+                    </div>
+                    <!--We aim at exceeding 100% customer satisfaction index. </p>--><p>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__header item-process__header--branding">
+                        <h6>Professionalism</h6>
+                    </div>
+                    <!--<p>At Oxspear we observe professionalism in all our endeavors ranging from observing ethical standards to registration with professional bodies. </p> -->
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__header item-process__header--implementation">
+                        <h6>Creativity and Innovation</h6>
+                    </div>
+                    <!--<p>We customized best practices to enhance efficiency in service delivery.</p>-->
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__header item-process__header--documentation">
+                        <h6>Teamwork</h6>
+                    </div>
+                    <!-- <p>Teamwork among our consulting team and client for guaranteed sustainable solutions.</p>-->
+                </div>
+
+            </div>  <!-- end about-process -->
+
+        </section> <!-- end s-about -->
+
+
+        <!-- services
+        ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 data-num="03" class="subhead">What We Do</h3>
+                    <h1 class="display-1 display-1--light">
+                    Here are the services we offer to our clients. 
+                    </h1>
+                    <p class="lead lead-light"></p>
+                </div>
+            </div>
+
+            <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Development and Review of Strategic Plans
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Performance management by use of Balanced Score Card
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Formulation of Communication Strategy
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Development of Business Plans
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Feasibility Studies
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Competence Needs Assessment
+                    </p>
+                </div>
+
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Team Building 
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4>Human Resource Surveys </h4>
+                    <p>
+                        Including: Employee satisfaction, work environment satisfaction, gender mainstreaming, disability mainstreaming, HIV/AIDs mainstreaming, corruption prevalence & perception
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Training & Capacity Building in various fields  
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Training Needs Assessment  
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Staff Skills & Competency Audit 
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Mid-Term and End-Term Evaluation 
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Development of Public Policy
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Development and Review of Human Resource Policies
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Integrated Risk Management
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Data Entry and Analysis
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Market Research 
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Project Planning & Management Expert
+                    </p>
+                </div>
+                <div class="col-block item-service" data-aos="fade-up">
+                    <h4></h4>
+                    <p>
+                        Information Communication and Technology
+                    </p>
+                </div>
+
+            </div> <!-- end services-list -->
+
+        </section> <!-- end s-services -->
+
+
+        <!-- TeamOrganisation
+        ================================================== -->
+        <section id="teamorganisation" class="s-works target-section">
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 data-num="04" class="subhead">Team Organisation</h3>
+                    <h1 class="display-1">
+                    Here's briefly how our team is orgainsed.
+                    </h1>
+                </div>
+            </div>    
+            
+            <div class="row block-1-2 block-tab-full  " data-aos="fade-up" >
+                <ul>
+                    <li>Researchers</li>
+                    <li>Balanced Score Card practitioners</li>
+                    <li>Human Resource practitioners</li>
+                    <li>Strategic Planning and Management Experts</li>
+                    <li>Training facilitators</li>
+                    <li>Monitoring & Evaluation experts</li>
+                    <li>Risk Management Experts</li>
+                    <li>Team Building facilitators</li>
+                </ul>
+            </div>
+            
+        </section> <!-- end s-works -->
+
+
+        <!-- clients
+        ================================================== -->
+        <section id="clients" class="s-clients target-section">
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 data-num="04" class="subhead">Selected Clients</h3>
+                    <h1 class="display-1 display-1--light">Some of the clients we have had the priviledge to work with are as follows...</h1>
+                </div>
+            </div>
+
+            <div class="row clients-list block-1-4 block-tab-1-3 block-mob-1-2" data-aos="fade-up">
+                    
+                <div class="col-block item-client">
+                    <a href="https://kefri.org">
+                        <img src="{{ url_for('static',filename='images/kefri.jpg')}}"style="width:300px;"> 
+                        
+                    </a>
+                </div>
+                <div class="col-block item-client">
+                    <a href="https://www.kentrade.go.ke">
+                        <img src="{{ url_for('static',filename='images/kentrade.jpg')}}"style="width:300px;"> 
+                        
+                    </a>
+                </div>
+                <div class="col-block item-client">
+                    <a href="http://www.devolutionals.go.ke">
+                        <img src="{{ url_for('static',filename='images/ministry_of_devolution_and_planing.jpg')}}"style="width:300px;"> 
+                        
+                    </a>
+                </div>
+                <div class="col-block item-client">
+                    <a href="http://www.orpp.or.ke">
+                        <img src="{{url_for('static', filename='images/office_of_registrar_of_political_parties.jpg')}}" style="width:300px;">
+                        
+                    </a>
+                </div>
+                <div class="col-block item-client">
+                    <a href="http://www.pc.go.ke">
+                        <img src="{{url_for('static', filename='images/privatization_commission.jpg')}}" style="width:300px;">
+                        
+                    </a>
+                </div>
+            
+            </div> <!-- clients-list -->
+
+        </section> <!-- end s-clients -->
+
+
+
+        <!-- contact
+        ================================================== -->
+        <section id="contact" class="s-contact target-section">
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 data-num="05" class="subhead">Get In Touch</h3>
+                    <h1 class="display-1 display-1--light">Want to contact us? Let’s work together and make something great. Drop us a line at <a href="mailto:oxspearconsultants@gmail.com">oxspearconsultants@gmail.com</a></h1>
+                </div>
+            </div>
+
+            <div class="row contact-infos">
+
+                <div class="col-five md-seven tab-full contact-address" data-aos="fade-up">
+                    <h4>Where to Find Us</h4>
+
+                    <p>
+                        Development House <br>
+                        P.O Box 38472-00100 <br>
+                        Nairobi, Kenya.
+                    </p>
+                </div>
+<!--
+                <div class="col-three md-five tab-full contact-social" data-aos="fade-up">
+                    <h4>Follow Us</h4>
+                    <ul class="contact-list">
+                        <li><a href="#0">Facebook</a></li>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                    </ul>
+                </div>
+
+
+-->
+                    
+
+                <div class="col-four md-six tab-full contact-number" data-aos="fade-up">
+                    <h4>Contact Us</h4>
+
+                    <ul class="contact-list">
+                        <li><a href="mailto:oxspearconsultants@gmail.com">oxspearconsultants@gmail.com</a></li>
+                        <li><a href="tel:+254726944318">+254 726 944 318</a></li>
+                    </ul>
+                </div>
+
+            </div> <!-- end contact-infos -->
+
+        </section> <!-- end s-contact -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer>
+            <div class="row">
+                <div class="col-full cl-copyright">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Oxspear Consultants Limited.</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </span>
+                </div>
+            </div>
+
+            <div class="cl-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+
+        <!-- photoswipe background
+        ================================================== -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                        "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                        "Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                    "Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- end photoSwipe background -->
+
+
+        <!-- Java Script
+        ================================================== -->
+        <script src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+    </body>
 </html>
